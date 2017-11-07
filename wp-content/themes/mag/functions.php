@@ -131,3 +131,7 @@ function mnky_admin_specific_scripts($mag_welcome_page) {
 		wp_enqueue_script( 'mnky_demo-import-inactive', MNKY_URI . '/js/demo-import-inactive.js', array('jquery'));
 	}
 }
+
+@ini_set( 'upload_max_size' , '10M' );
+@ini_set( 'post_max_size', '10M');
+@ini_set( 'max_execution_time', '300' );
